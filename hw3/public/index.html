@@ -1,0 +1,96 @@
+<!-- cheesecake.html -->
+<!-- Name: Hewlett De Lara -->
+<!-- Email: delara23@up.edu -->
+<!-- Due: Wednesday. Jan. 31, 2024 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title and stylesheets -->
+    <title>Hewlett's Cheesecake</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/hewlettstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- jQuery for functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Order form header -->
+    <h1 style="font-size: 70px; color: #a67c00; font-weight: bold; font-family: 'Bookman Old Style','URW Bookman L','Palatino Linotype',serif;">Cheesecake Order Form</h1>
+    
+    <!-- Cheesecake image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+        alt="Strawberry Cheesecake" width="200" height="200">
+
+    <!-- Order form container -->
+    <div class="order-form-container" style="padding: 10px; margin: 0;">
+        <!-- Order options -->
+        <p style="margin: 0;">Quantity Topping</p>
+        <div style="display: flex; align-items: center;">
+            <select id="quantitySelect" class="select">
+                <option disabled selected># Toppings</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <!-- Flavor selection -->
+            <form id="radiobuttons" style="display: flex; flex-direction: column; text-align: left; margin: 0;">
+                <label for="flavor1"><input type="radio" name="flavor" id="flavor1" value="plain"> Plain</label>
+                <label for="flavor2"><input type="radio" name="flavor" id="flavor2" value="cherry"> Cherry</label>
+                <label for="flavor3"><input type="radio" name="flavor" id="flavor3" value="chocolate"> Chocolate</label>
+            </form>
+        </div>
+
+        <!-- Additional notes form -->
+        <form id="notesform">
+            Notes:<br>
+            <textarea name="message" id="message" rows="5" cols="70" placeholder="Enter any special instructions here."></textarea><br>
+            <button type="button" id="orderButton">Order</button>
+        </form>
+    </div>
+
+    <!-- Orders for the month display -->
+    <h2 style="font-size: 40px; color: #A94064;">Orders for <span class="month-widget" style="position: relative; background-color: #faebd7; border-radius: 5px; padding: 5px; border: 4px solid #A94064;">Jan
+            <span class="month-options" style="position: absolute; display: none; background-color: #faebd7; padding: 10px; border-radius: 5px;">
+                    <ul>
+                        <li>Jan</li>
+                        <li>Feb</li>
+                        <li>Mar</li>
+                        <li>Apr</li>
+                        <li>May</li>
+                        <li>Jun</li>
+                        <li>Jul</li>
+                        <li>Aug</li>
+                        <li>Sep</li>
+                        <li>Oct</li>
+                        <li>Nov</li>
+                        <li>Dec</li>
+                    </ul>
+                </span>
+            </span>
+        </h2>
+
+    <!-- List of orders -->
+    <ul class="orders">
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 plain</li>
+    </ul>
+
+    <!-- Placeholder for order output -->
+    <div id="orderOutput" class="order-details"></div>
+    
+    <!-- External JavaScript file link -->
+    <script src="javascripts/main.js"></script>
+</body>
+
+</html>
+
+
+
+

@@ -1,3 +1,7 @@
+/* selectEvent.test.js */
+/* Name: Hewlett De Lara */
+/* Email: delara23@up.edu */
+
 var fs = require('fs');
 
 test('test selectEvent', () => {

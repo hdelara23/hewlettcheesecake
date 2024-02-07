@@ -1,3 +1,6 @@
+/* main.js */
+/* Name: Hewlett De Lara */
+/* Email: delara23@up.edu */
 
 $(document).ready(function () {
     // Event handler for the Order button
